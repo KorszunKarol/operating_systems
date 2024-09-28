@@ -1,0 +1,11 @@
+Epson Printer - Stock: 10 - Category: Office
+Samsung Monitor - Stock: 15 - Category: Electronics
+Philips Air Purifier - Stock: 20 - Category: Home
+Dell Keyboard - Stock: 12 - Category: Office
+HP LaserJet Printer - Stock: 11 - Category: Office
+Logitech Mouse - Stock: 18 - Category: Office
+HP OfficeJet Printer - Stock: 12 - Category: Office
+Office Desk Lamp - Stock: 15 - Category: Office
+Blender Bottle - Stock: 25 - Category: Kitchen
+Crock-Pot Slow Cooker - Stock: 10 - Category: Kitchen
+Bialetti Moka Express - Stock: 15 - Category: Kitchen

@@ -1,0 +1,32 @@
+ABC Electronics (abc@electronics.com):
+	Electronics:
+		- Laptop HP Pavilion - Stock: 5 - Restock: 15
+		- Apple iPhone - Stock: 9 - Restock: 31
+		- Microsoft Surface Laptop - Stock: 6 - Restock: 19
+		- Apple MacBook Pro - Stock: 7 - Restock: 18
+
+HomeSuppliers Ltd (info@homesuppliers.com):
+	Home:
+		- Dyson Vacuum Cleaner - Stock: 2 - Restock: 8
+	Kitchen:
+		- KitchenAid Mixer - Stock: 3 - Restock: 7
+		- Samsung Refrigerator - Stock: 2 - Restock: 8
+		- Ninja Blender - Stock: 8 - Restock: 17
+	Home:
+		- Whirlpool Washing Machine - Stock: 6 - Restock: 9
+
+OfficeSupply Inc (contact@officesupply.com):
+	Office:
+		- Ergonomic Chair - Stock: 3 - Restock: 17
+		- Brother Fax Machine - Stock: 4 - Restock: 6
+	Home:
+		- Google Nest Hub - Stock: 5 - Restock: 15
+	Office:
+		- Executive Office Chair - Stock: 3 - Restock: 7
+
+Tech Warehouse (sales@techwarehouse.com):
+	Office:
+		- IKEA Standing Desk - Stock: 5 - Restock: 15
+		- Office Filing Cabinet - Stock: 4 - Restock: 6
+		- Fellowes Paper Shredder - Stock: 8 - Restock: 12
+
