@@ -1,0 +1,22 @@
+The output of the program must be completely identical to what is shown in the
+execution examples.
+• The use of global variables is prohibited.
+• SIGINT must be ignored during the entire execution. Program must not stop if
+one is received.
+• The text file will have the specified format and there will be no mistakes.
+• You must ensure that, when the execution ends, all the processes have ended
+properly.
+• When the program ends, all the dynamic memory used must have been freed,
+and all file descriptors must be closed.
+• All inputs and outputs must be done using file descriptors. The use of printf,
+scanf, FILE*, getchar or similar is NOT allowed.
+• The use of the functions “system”, “popen”, or from the same family is NOT
+allowed.
+• You must compile using the –Wall, –Wextra, and –lpthread flags.
+• Any deliverable containing warnings or errors will be directly discarded.
+• At the start of the .c you must include a comment with your logins, names, and
+surnames.
+• For submitting the session, you must hand over a file “S3.c”, and deliver it
+through eStudy platform.
+• For the use of certain functions, it might be necessary to add:
+DO NOT ADD ANY COMMENTS IN THE CODE

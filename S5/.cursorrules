@@ -1,0 +1,66 @@
+Considerations
+• The IP and port to which the client must connect and the server must
+listen are passed as a parameter.
+• It can be assumed that the format of the input parameters will always
+be correct. However, must check if the number of parameters is correct.
+• The port assigned to the client and server is the one assigned to the
+group.
+• The client is guaranteed to always enter an input followed by a return
+(\n).
+• The server manages who is the winner, clients must only save and
+display the board distribution.
+• The communication between client and server must be carried out
+following the guidelines of the frames indicated in the statement.
+• The output of the program must be similar to that of the statement (see
+execution examples).
+• The use of “system” or “popen” or analogous functions of the same
+family is not allowed.
+• The use of global variables must be reduced to the minimum possible to
+make the program work correctly.
+• All input and output must be done with file descriptors, the use of printf,
+scanf, FILE*, getchar, or similar is not allowed.
+• It must be compiled using the –Wall, –Wextra and -lpthread flags.
+• Any practice that contains warnings will be directly discarded.
+• All resources must be released.
+• A single “S5.c” file must be delivered that will have the names and logins
+of the group members commented. Otherwise, the practice will not be
+corrected.
+• You may use the client you made last session. However, the correction
+will be made with the one provided / last session solution.
+
+Guardian of Enigmas
+In the vast ocean of data in the digital world, a legendary treasure known as "The
+Code Chest" has been hidden on a mysterious island protected by the server
+Guardian of Enigmas. This server challenges all navigators (clients) who seek to
+uncover the encoded secrets within the chest. Each challenge they overcome
+brings them closer to the treasure, revealing coordinates piece by piece.
+Your goal is to build a server in C that functions as the guardian of the chest,
+challenging clients with cultural, logical, and mathematical riddles. The server
+must handle multiple connections simultaneously, provide challenges, validate
+responses, offer hints, and track the progress of each clientseparately. This server
+must be able to:
+- Initiate and Manage Connections: Listen on the port and accept multiple
+incoming connections.
+- Load Challenges: Read a set of challenges from a text file (challenges.txt)
+upon startup and keep them in memory for users to check.
+- Dynamic Interaction: Respond to challenge requests, receive responses,
+provide hints, and display progress.
+Keep in mind the client you already implemented the client, so you understand
+the type of requests you’ll be receiving. These were:
+1. Receive Current Challenge: The server will receive a “1\n” and the it must send
+the corresponding challenge to the client extracted from the file.
+2. Send Response to Challenge: The server will receive a “2\n” followed by
+“<answer>\n”. The server must verify the response to the corresponding
+challenge extracted from the file.
+3. Request Hint: The server will receive a “3\n” and must send a hint for the
+challenge corresponding to the client extracted from the file.
+4. View Current Mission Status: The server will receive a “4\n” and must then
+inform how many challenges remain, and if all are completed, provide the
+coordinates of the chest. (This includes tracking each client: which challenge they
+are on and how many they have left to finish).
+5. Terminate Connection and Exit: The server will rec
+
+Structure of the "challenges.txt" file:
+Question1|Answer1&Hint\n
+Question2|Answer2&Hint\n
+Question3|Answer3&Hint\n

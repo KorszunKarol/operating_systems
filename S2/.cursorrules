@@ -1,0 +1,31 @@
+remember to not use static buffers if the size may change.
+we can use strings.h library as well
+
+
+When the program ends, all the dynamic memory used must have
+been freed, and all file descriptors must be closed.
+• The use of global variables is not allowed, except for the ones
+necessary for the control of the signals and forks.
+• All inputs and outputs must be done using file descriptors. The use of
+printf, scanf, FILE*, getchar or similar is NOT allowed.
+• You must compile using the –Wall and –Wextra flags.
+• Any deliverable containing warnings or errors will be directly
+discarded.
+• At the start of the .c you must include a comment with your logins,
+names, and surnames.
+• For submitting the session, you must hand over a file “S2.c”, and
+deliver it through the eStudy platform.
+• You must control that the number of arguments is correct.
+• The use of the functions “system”, “popen”, or from the same family
+is NOT allowed.
+• You must ensure that, when the execution ends, all the processes
+have ended properly.
+• You must control if the fork() function works. In case of failure, an
+error message must appear.
+• The order of the messages may be different from the ones in the
+example.
+• You must control Ctrl+C.
+• In case of not killing the forks properly, the use of the following
+instruction is strongly advised: pkill -u <login>.
+
+do not add any comments in the code, just the code itself.

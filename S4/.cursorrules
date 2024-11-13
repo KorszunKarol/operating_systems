@@ -1,0 +1,31 @@
+Considerations
+• The IP and port to which the client must connect and the server must listen are
+passed as a parameter.
+• It can be assumed that the format of the input parameters will always be correct.
+However, must check if the number of parameters is correct.
+• The port assigned to the client and server is the one assigned to the group.
+• The client is guaranteed to always enter an input followed by a return (\n).
+• The server manages who is the winner, clients must only save and display the board
+distribution.
+• The communication between client and server must be carried out following the
+guidelines of the frames indicated in the statement.
+• The output of the program must be identical to that of the statement (see execution
+examples).
+• The use of “system” or “popen” or analogous functions of the same family is not
+allowed.
+• The use of global variables must be reduced to the minimum possible to make the
+program work correctly.
+• All input and output must be done with file descriptors, the use of printf, scanf, FILE*,
+getchar, or similar is not allowed.
+• It must be compiled using the –Wall and –Wextra flags.
+• Any practice that contains warnings will be directly discarded.
+• All resources must be released.
+• A single “S4.c” file must be delivered that will have the names and logins of the group
+members commented. Otherwise, the practice will not be corrected.
+• The server is guaranteed to never go down as long as a client is connected.
+• If an unexpected frame is received the server will print its contents and ignore it.
+
+
+In examples folder you have the examples of how the code should be written like in which style and what functions they use and dont use.
+
+also you cant write ANY comments in my code.
