@@ -1,0 +1,23 @@
+Francesco,Bagnaia,1,Ducati Lenovo Team
+Enea,Bastianini,23,Ducati Lenovo Team
+Maverick,Viñales,12,Aprilia Racing
+Fabio,Quartararo,20,Monster Energy Yamaha MotoGP
+Pedro,Acosta,31,Red Bull GASGAS Tech3
+Joan,Mir,36,Repsol Honda Team
+Aleix,Espargaró,41,Aprilia Racing
+Jack,Miller,43,Red Bull KTM Factory Racing
+Jorge,Martín,89,Prima Pramac Racing
+Marc,Márquez,93,Gresini Racing MotoGP
+Jose,Mir,100,Prima Pramac Racing
+Alex,Rins,42,LCR Honda Castrol
+Franco,Morbidelli,21,Prima Pramac Racing
+Miguel,Oliveira,88,Trackhouse Racing
+Brad,Binder,33,Red Bull KTM Factory Racing
+Luca,Marini,10,Repsol Honda Team
+Fabio,Di Giannantonio,49,VR46 Racing Team
+Johann,Zarco,5,LCR Honda IDEMITSU
+Raul,Fernandez,25,Trackhouse Racing
+Marco,Bezzecchi,72,VR46 Racing Team
+Augusto,Fernandez,37,Red Bull GASGAS Tech3
+Takaaki,Nakagami,30,LCR Honda IDEMITSU
+

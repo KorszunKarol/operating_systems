@@ -1,0 +1,219 @@
+==17206== Memcheck, a memory error detector
+==17206== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==17206== Using Valgrind-3.18.1-42b08ed5bd-20211015 and LibVEX; rerun with -h for copyright info
+==17206== Command: ./S6
+==17206== Parent PID: 211
+==17206== 
+--17206-- 
+--17206-- Valgrind options:
+--17206--    --tool=memcheck
+--17206--    --leak-check=full
+--17206--    --show-leak-kinds=all
+--17206--    --track-origins=yes
+--17206--    --verbose
+--17206--    --track-fds=yes
+--17206--    --trace-children=yes
+--17206--    --log-file=valgrind-out.txt
+--17206-- Contents of /proc/version:
+--17206--   Linux version 5.15.167.4-microsoft-standard-WSL2 (root@f9c826d3017f) (gcc (GCC) 11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Tue Nov 5 00:21:55 UTC 2024
+--17206-- 
+--17206-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-ssse3-avx-avx2-bmi-f16c-rdrand-rdseed
+--17206-- Page sizes: currently 4096, max supported 4096
+--17206-- Valgrind library directory: /usr/libexec/valgrind
+--17206-- Reading syms from /home/karolito/operating_systems/S6/S6
+--17206-- Reading syms from /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+--17206--   Considering /usr/lib/debug/.build-id/24/6ac0d8deba5a40c63e9a1a87d4d779d8eb589f.debug ..
+--17206--   .. build-id is valid
+--17206-- Reading syms from /usr/libexec/valgrind/memcheck-amd64-linux
+--17206--    object doesn't have a symbol table
+--17206--    object doesn't have a dynamic symbol table
+--17206-- Scheduler: using generic scheduler lock implementation.
+--17206-- Reading suppressions file: /usr/libexec/valgrind/default.supp
+==17206== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-17206-by-karolito-on-???
+==17206== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-17206-by-karolito-on-???
+==17206== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-17206-by-karolito-on-???
+==17206== 
+==17206== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==17206== don't want to do, unless you know exactly what you're doing,
+==17206== or are doing some strange experiment):
+==17206==   /usr/bin/vgdb --pid=17206 ...command...
+==17206== 
+==17206== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==17206==   /path/to/gdb ./S6
+==17206== and then give GDB the following command
+==17206==   target remote | /usr/bin/vgdb --pid=17206
+==17206== --pid is optional if only one valgrind process is running
+==17206== 
+--17206-- REDIR: 0x402aa40 (ld-linux-x86-64.so.2:strlen) redirected to 0x580bcec2 (???)
+--17206-- REDIR: 0x402a810 (ld-linux-x86-64.so.2:index) redirected to 0x580bcedc (???)
+--17206-- Reading syms from /usr/libexec/valgrind/vgpreload_core-amd64-linux.so
+--17206--    object doesn't have a symbol table
+--17206-- Reading syms from /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so
+--17206--    object doesn't have a symbol table
+==17206== WARNING: new redirection conflicts with existing -- ignoring it
+--17206--     old: 0x0402aa40 (strlen              ) R-> (0000.0) 0x580bcec2 ???
+--17206--     new: 0x0402aa40 (strlen              ) R-> (2007.0) 0x0484ee30 strlen
+--17206-- REDIR: 0x4027220 (ld-linux-x86-64.so.2:strcmp) redirected to 0x484fcd0 (strcmp)
+--17206-- REDIR: 0x402afa0 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4853840 (mempcpy)
+--17206-- Reading syms from /usr/lib/x86_64-linux-gnu/libc.so.6
+--17206--   Considering /usr/lib/debug/.build-id/96/2015aa9d133c6cbcfb31ec300596d7f44d3348.debug ..
+--17206--   .. build-id is valid
+==17206== WARNING: new redirection conflicts with existing -- ignoring it
+--17206--     old: 0x0491fc60 (memalign            ) R-> (1011.0) 0x0484e080 memalign
+--17206--     new: 0x0491fc60 (memalign            ) R-> (1017.0) 0x0484e050 aligned_alloc
+==17206== WARNING: new redirection conflicts with existing -- ignoring it
+--17206--     old: 0x0491fc60 (memalign            ) R-> (1011.0) 0x0484e080 memalign
+--17206--     new: 0x0491fc60 (memalign            ) R-> (1017.0) 0x0484e020 aligned_alloc
+==17206== WARNING: new redirection conflicts with existing -- ignoring it
+--17206--     old: 0x0491fc60 (memalign            ) R-> (1011.0) 0x0484e080 memalign
+--17206--     new: 0x0491fc60 (memalign            ) R-> (1017.0) 0x0484e050 aligned_alloc
+==17206== WARNING: new redirection conflicts with existing -- ignoring it
+--17206--     old: 0x0491fc60 (memalign            ) R-> (1011.0) 0x0484e080 memalign
+--17206--     new: 0x0491fc60 (memalign            ) R-> (1017.0) 0x0484e020 aligned_alloc
+--17206-- REDIR: 0x4922720 (libc.so.6:strnlen) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x49229e0 (libc.so.6:strpbrk) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x49222e0 (libc.so.6:strcmp) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x4940cd0 (libc.so.6:wcsnlen) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x49236d0 (libc.so.6:memset) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x493f540 (libc.so.6:wcslen) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x4923c10 (libc.so.6:memcpy@@GLIBC_2.14) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x493f370 (libc.so.6:wcschr) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x4922260 (libc.so.6:index) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x4922960 (libc.so.6:rindex) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x49235a0 (libc.so.6:memmove) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+==17206== Preferring higher priority redirection:
+--17206--     old: 0x04a1a7c0 (__memcpy_avx_unalign) R-> (2018.0) 0x04850f90 __memcpy_avx_unaligned_erms
+--17206--     new: 0x04a1a7c0 (__memcpy_avx_unalign) R-> (2018.1) 0x04852880 memmove
+--17206-- REDIR: 0x493f3f0 (libc.so.6:wcscmp) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x49239e0 (libc.so.6:stpncpy) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x493f9b0 (libc.so.6:wmemchr) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x4922830 (libc.so.6:strncmp) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x4923a70 (libc.so.6:strcasecmp) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x4922420 (libc.so.6:strcspn) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x493f470 (libc.so.6:wcscpy) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x49221d0 (libc.so.6:strcat) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x4923b60 (libc.so.6:strncasecmp_l) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x4923480 (libc.so.6:bcmp) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x492b570 (libc.so.6:memrchr) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x4925010 (libc.so.6:strchrnul) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x4922390 (libc.so.6:strcpy) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x4923b10 (libc.so.6:strcasecmp_l) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x49226a0 (libc.so.6:strlen) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x49228d0 (libc.so.6:strncpy) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x4923950 (libc.so.6:stpcpy) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x49233f0 (libc.so.6:memchr) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x4922b00 (libc.so.6:strspn) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x49237d0 (libc.so.6:mempcpy) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x4923ac0 (libc.so.6:strncasecmp) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x4924f80 (libc.so.6:rawmemchr) redirected to 0x483f220 (_vgnU_ifunc_wrapper)
+--17206-- REDIR: 0x4a17610 (libc.so.6:__strrchr_avx2) redirected to 0x484e810 (rindex)
+--17206-- REDIR: 0x4a1af80 (libc.so.6:__memset_avx2_unaligned_erms) redirected to 0x4852770 (memset)
+==17213== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-17213-by-karolito-on-???
+==17213== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-17213-by-karolito-on-???
+==17213== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-17213-by-karolito-on-???
+==17213== 
+==17213== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==17213== don't want to do, unless you know exactly what you're doing,
+==17213== or are doing some strange experiment):
+==17213==   /usr/bin/vgdb --pid=17213 ...command...
+==17213== 
+==17213== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==17213==   /path/to/gdb ./S6
+==17213== and then give GDB the following command
+==17213==   target remote | /usr/bin/vgdb --pid=17213
+==17213== --pid is optional if only one valgrind process is running
+==17213== 
+==17214== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-17214-by-karolito-on-???
+==17214== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-17214-by-karolito-on-???
+==17214== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-17214-by-karolito-on-???
+==17214== 
+==17214== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==17214== don't want to do, unless you know exactly what you're doing,
+==17214== or are doing some strange experiment):
+==17214==   /usr/bin/vgdb --pid=17214 ...command...
+==17214== 
+==17214== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==17214==   /path/to/gdb ./S6
+==17214== and then give GDB the following command
+==17214==   target remote | /usr/bin/vgdb --pid=17214
+==17214== --pid is optional if only one valgrind process is running
+==17214== 
+==17215== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-17215-by-karolito-on-???
+==17215== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-17215-by-karolito-on-???
+==17215== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-17215-by-karolito-on-???
+==17215== 
+==17215== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==17215== don't want to do, unless you know exactly what you're doing,
+==17215== or are doing some strange experiment):
+==17215==   /usr/bin/vgdb --pid=17215 ...command...
+==17215== 
+==17215== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==17215==   /path/to/gdb ./S6
+==17215== and then give GDB the following command
+==17215==   target remote | /usr/bin/vgdb --pid=17215
+==17215== --pid is optional if only one valgrind process is running
+==17215== 
+--17206-- REDIR: 0x491f0a0 (libc.so.6:malloc) redirected to 0x4848820 (malloc)
+--17206-- REDIR: 0x4a17400 (libc.so.6:__strchrnul_avx2) redirected to 0x4853330 (strchrnul)
+--17206-- REDIR: 0x4a1a780 (libc.so.6:__mempcpy_avx_unaligned_erms) redirected to 0x4853440 (mempcpy)
+--17206-- REDIR: 0x4a177e0 (libc.so.6:__strlen_avx2) redirected to 0x484ed10 (strlen)
+--17206-- REDIR: 0x491f740 (libc.so.6:realloc) redirected to 0x484dc50 (realloc)
+--17206-- REDIR: 0x491f3e0 (libc.so.6:free) redirected to 0x484b210 (free)
+--17215-- REDIR: 0x491f3e0 (libc.so.6:free) redirected to 0x484b210 (free)
+==17215== 
+==17215== FILE DESCRIPTORS: 3 open (3 std) at exit.
+==17215== 
+==17215== HEAP SUMMARY:
+==17215==     in use at exit: 0 bytes in 0 blocks
+==17215==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==17215== 
+==17215== All heap blocks were freed -- no leaks are possible
+==17215== 
+==17215== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+--17214-- REDIR: 0x491f3e0 (libc.so.6:free) redirected to 0x484b210 (free)
+--17213-- REDIR: 0x491f3e0 (libc.so.6:free) redirected to 0x484b210 (free)
+==17214== 
+==17214== FILE DESCRIPTORS: 3 open (3 std) at exit.
+==17214== 
+==17214== HEAP SUMMARY:
+==17214==     in use at exit: 0 bytes in 0 blocks
+==17214==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==17214== 
+==17214== All heap blocks were freed -- no leaks are possible
+==17214== 
+==17214== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==17213== 
+==17213== FILE DESCRIPTORS: 3 open (3 std) at exit.
+==17213== 
+==17213== HEAP SUMMARY:
+==17213==     in use at exit: 0 bytes in 0 blocks
+==17213==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==17213== 
+==17213== All heap blocks were freed -- no leaks are possible
+==17213== 
+==17213== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==17206== 
+==17206== FILE DESCRIPTORS: 8 open (3 std) at exit.
+==17206== Open file descriptor 25: /home/karolito/.cursor-server/data/logs/20241113T190705/network.log
+==17206==    <inherited from parent>
+==17206== 
+==17206== Open file descriptor 23: /home/karolito/.cursor-server/data/logs/20241113T190705/remoteagent.log
+==17206==    <inherited from parent>
+==17206== 
+==17206== Open file descriptor 20: /home/karolito/.cursor-server/data/logs/20241113T190705/ptyhost.log
+==17206==    <inherited from parent>
+==17206== 
+==17206== Open file descriptor 17: /dev/urandom
+==17206==    <inherited from parent>
+==17206== 
+==17206== Open file descriptor 3: /home/karolito/operating_systems/S6/valgrind-out.txt
+==17206==    <inherited from parent>
+==17206== 
+==17206== 
+==17206== HEAP SUMMARY:
+==17206==     in use at exit: 0 bytes in 0 blocks
+==17206==   total heap usage: 72 allocs, 72 frees, 6,110 bytes allocated
+==17206== 
+==17206== All heap blocks were freed -- no leaks are possible
+==17206== 
+==17206== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

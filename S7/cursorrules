@@ -1,0 +1,21 @@
+Considerations
+• Client monitoring must be done with select()
+• All shared resources must be protected
+• It can be assumed that the server program will be executed before the client
+program.
+• It can be assumed that the client will always respect the frames and that the
+input file format will not contain errors.
+• The use of “system” or “popen” functions or similar from the same family is not
+allowed.
+• All input and output must be done with file descriptors; the use of printf, scanf,
+FILE*, getchar, or similar is not allowed.
+• All resources must be freed, otherwise the practice will not be considered
+unsuitable.
+• Connections must be closed as well as possible, also considering unexpected
+closures. Hanging connections will not be accepted.
+• The output of the program must be identical to that of the statement (see
+examples of execution).
+• A single S7.c file must be delivered with the names and logins of the group
+members commented. Otherwise, the session will not be corrected.
+• It must be compiled using the flags –Wall, –Wextra and -lpthread.
+• Any session containing warnings or errors will be unsuitable.

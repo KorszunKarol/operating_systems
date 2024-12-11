@@ -1,0 +1,16 @@
+follow the style of code from examples folder
+
+Considerations:
+• Mutual exclusion and/or synchronization must be guaranteed using
+semaphores.
+• Check that you do not leave shared resources (semaphores, etc.) on the system.
+Use ipcs, ipcrm and other available scripts.
+• All input and output must be done with file descriptors. The use of printf, scanf,
+FILE*, getchar, or similar is not allowed.
+• Compile using the –Wall and –Wextra flags.
+• Any practice that contains warnings will be unsuitable.
+• All resources must be released, otherwise the practice will be unsuitable.
+• At the beginning of the created .c, the logins and names and surnames of the
+students who are taking part in the session must be commented.
+• The program must ignore the CTRL+ C in this way if the user presses CTRL+ C, the
+program must continue normally

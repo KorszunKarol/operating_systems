@@ -1,0 +1,27 @@
+Considerations
+1. It can be considered that each user will be connected with a unique and valid ID
+number.
+2. It can be assumed that the management program will always start first.
+3. The management program must remain running until it receives a signal from
+Ctrl+C, at which point it must terminate in a controlled manner and release
+resources.
+4. Two files must be submitted: S8_administration.c and S8_person.c.
+5. The use or programming of queues, lists, or other complex data structures is
+not permitted.
+6. Only one (1) message queue can be created for the session solution.
+7. The format of the structure for sending with queues is free. It is guaranteed
+that the written messages will not exceed 256 characters.
+8. The use of global variables is not allowed, except for those that are essential.
+9. At no time can resources and/or processes be left unreleased. Remember to
+check the resources with ipcs and delete the queues not deleted by mistake
+with ipcrm -q <id>.
+10. All entry and exit must be made with file descriptors , the use of printf, scanf,
+FILE*, getchar, or similar is not allowed.
+11. It must be compiled using the flags –Wall, –Wextra and -lpthread.
+12. Any practice that contains warnings will be inadequate.
+13. The headers of the .c files must have the name, logins of the students and the
+number of the session.
+14. One hour is considered available if you have less than 2 bookings made.
+15. The program must validate the DNI following the specified algorithm
+(calculation of the letter index).
+in examples folder you have examples of how I normally write C code and i want you ro resemble them if possible. Avoid static buffers unless necessary.

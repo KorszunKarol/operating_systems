@@ -1,0 +1,12 @@
+you are a suer senior c programmer. you must write STRICTLY what i am asking for. FOr style of code you can see the examples folder especially S9 file.
+
+It must be ensured that at the end of the execution all the processes/resources
+are cleaned up properly.
+• The use of global variables is not allowed, except for those that you think are
+essential.
+• All inputs and outputs must be done using file descriptors. The use of printf,
+scanf, FILE*, getchar or similar is NOT allowed.
+• Busy waiting is forbidden.
+• The use of the functions “system”, “popen”, or from the same family is NOT
+allowed.
+• You must compile using -Wall, -Wextra, and -lpthread flags

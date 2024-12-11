@@ -1,0 +1,24 @@
+In the examples folder, there are some examples of the code that you should use as a reference. If a certain operation is done in a certain way in the examples, you should do it the same way in the tasks.
+Generally we should avoid using global variables and static buffers.
+
+If you are unsure about something, you should ALWAYS ask me for calrification before you do it.
+
+
+Considerations
+• There can be no active waiting.
+• All used Fds and memory must be closed and released.
+• You must handle shared memory safely to avoid racing conditions.
+• The use of "system" or "popen" or similar functions from the same family is
+not permitted.
+• To carry out this session it is not necessary to use a makefile.
+• The use of global variables only those that are strictly necessary is not
+allowed.
+• All entry and exit must be made with file descriptors, the use of printf, scanf,
+FILE*, getchar, or similar is not allowed.
+• It must be compiled using the –Wall and –Wextra flags.
+• Any practice that contains warnings will be inadequate.
+• The name of the file will be S6.c
+• The file must have the name, session and the name and login of the students
+who have done the practice commented at the beginning.
+
+do not use any comments in code
